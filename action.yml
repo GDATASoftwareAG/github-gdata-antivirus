@@ -1,6 +1,6 @@
 # action.yml
-name: "VaaS Scan"
-description: "Scans changed files in a PR for malware"
+name: "Github G DATA Antivirus"
+description: "Scans changed files in a Pull-Request for malware"
 inputs:
   VAAS_URL:
     description: "The gateway URL of your credentials environment"
