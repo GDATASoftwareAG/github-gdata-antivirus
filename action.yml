@@ -1,6 +1,9 @@
 # action.yml
 name: "Github G DATA Antivirus"
 description: "Scans changed files in a Pull-Request for malware"
+branding:
+  icon: shield
+  color: red
 inputs:
   VAAS_URL:
     description: "The gateway URL of your credentials environment"
