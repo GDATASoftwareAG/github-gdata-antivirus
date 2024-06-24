@@ -1,4 +1,4 @@
-# vaas-scan-action
+# github-gdata-antivirus
 
 This is a github action with that one can scan changes in pull-requests with the G DATA product Verdict-as-a-Service (VaaS). VaaS is an Antivirus in the cloud, that can be utilized by a simple api.
 
@@ -9,7 +9,8 @@ Before you can use this action, you need to aquire credentials. Please find more
 ## usage
 
 ```yaml
-- uses: actions/vaas-scan-action
+- name: Github G DATA Antivirus
+  uses: GDATASoftwareAG/github-gdata-antivirus@1.0.0     
   with:
     # You either need VAAS_CLIENT_ID (get in contact with us) or a VAAS_USERNAME (use the self registration (trial))
     # The CLIENT_ID is the only mendatory variable
@@ -31,7 +32,8 @@ Before you can use this action, you need to aquire credentials. Please find more
 ### Self-Registered Credentials
 
 ```yaml
-- uses: actions/vaas-scan-action
+- name: Github G DATA Antivirus
+  uses: GDATASoftwareAG/github-gdata-antivirus@1.0.0
   with:
     VAAS_USERNAME: "some-username"
     VAAS_PASSWORD: "some-password"
@@ -40,7 +42,8 @@ Before you can use this action, you need to aquire credentials. Please find more
 ### Got a CLIENT_SECRET from us
 
 ```yaml
-- uses: actions/vaas-scan-action
+- name: Github G DATA Antivirus
+  uses: GDATASoftwareAG/github-gdata-antivirus@1.0.0
   with:
     VAAS_CLIENT_ID: "some-id"
     VAAS_CLIENT_SECRET: "some-secret"
@@ -49,7 +52,8 @@ Before you can use this action, you need to aquire credentials. Please find more
 ### For on Premise VaaS installations
 
 ```yaml
-- uses: actions/vaas-scan-action
+- name: Github G DATA Antivirus
+  uses: GDATASoftwareAG/github-gdata-antivirus@1.0.0
   with:
     VAAS_CLIENT_ID: "some-id"
     VAAS_CLIENT_SECRET: "some-secret"
